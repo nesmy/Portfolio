@@ -1,6 +1,5 @@
 import { defineConfig } from "astro/config"
 
-export default defineConfig({
-    base: '/Portfolio',
+export default defineConfig({    
     outDir: '/home/sharing/Site/Portfolio',
 })
