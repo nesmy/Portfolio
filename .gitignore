@@ -1,0 +1,34 @@
+# Astro build output
+/dist
+/build
+
+# Local development
+/.astro
+/node_modules
+/.cache
+/.vite
+
+# Environment files
+.env
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+log.txt
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode settings (optional)
+.vscode
+
+# Mac/Linux swap files
+*~
+*.swp
+
+# Windows
+ehthumbs.db
