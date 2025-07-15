@@ -1,0 +1,32 @@
+---
+import Social from '../components/Social.astro';
+---
+
+<!-- Projects -->
+<section class="bg-gray-100 dark:bg-gray-800 py-20 px-6" id="projects">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold mb-10 text-center" data-i18n="projects">Projects</h2>
+
+    <!-- Live GitHub Projects -->
+    <div id="githubProjects" class="grid md:grid-cols-2 gap-8 mb-12">
+      <!-- GitHub projects will be injected here by JavaScript -->
+    </div>
+
+    <!-- Manual Projects -->
+    <div class="grid md:grid-cols-2 gap-8">
+      <div onclick="openModal('Urban Engine', 'A custom 3D game engine built in C++ with an editor, entity system, and custom rendering pipeline.')" class="bg-white dark:bg-gray-700 p-6 rounded shadow cursor-pointer hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-2">Urban Engine</h3>
+        <p class="text-gray-600 dark:text-gray-300">C++ game engine with rendering pipeline & editor</p>
+      </div>
+      <div onclick="openModal('GenesisOS', 'A game-focused OS built with Buildroot and DRM/KMS, launching directly into a fullscreen game-like environment.')" class="bg-white dark:bg-gray-700 p-6 rounded shadow cursor-pointer hover:shadow-xl transition">
+        <h3 class="text-2xl font-semibold mb-2">GenesisOS</h3>
+        <p class="text-gray-600 dark:text-gray-300">Boot-to-game operating system</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Links Component -->
+  <div class="mt-16">
+    <Social />
+  </div>
+</section>

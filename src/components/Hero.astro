@@ -1,50 +1,10 @@
-<!-- !PAGE CONTENT! -->
+---
 
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
+---
 
-  <!-- Photo grid -->
-  <div class="w3-row" >
-    <div  class="mySlides fade">
-      <img src="/images/UrbanEngine.png" style="width:100%;height:650px" onclick="_gotoPage(2)" alt="project1">
-    </div>
-    <div  class="mySlides fade">
-      <img src="/images/pingpong.png" style="width:100%;height:650px" onclick="_gotoPage(1)" alt="project2">
-    </div>
-    <div  class="mySlides fade">
-      <img src="/images/GenesisOS.png" style="width:100%;height:650px" onclick="onClick1(this)" alt="project3">
-    </div>
-  </div>
-
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a class="w3-bar-item w3-button w3-hover-black" onclick="plusSlides(-1)">«</a>
-      <a onclick="currentSlide(1)" class="dots w3-bar-item w3-button">1</span>
-      <a onclick="currentSlide(2)" class="dots w3-bar-item w3-button">2</a>
-      <a onclick="currentSlide(3)" class="dots w3-bar-item w3-button">3</a>
-      <a class="w3-bar-item w3-button w3-hover-black" onclick="plusSlides(1)">»</a>
-    </div>
-    <div style="padding-top:5px">
-        <button class="w3-bar-item w3-button w3-hover-black"><a class="w3-bar-item"style="text-decoration:none" href="https://nesmy.itch.io/" target="_blank" id="lang-en">More</a></button>
-    </div>
-  </div>
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-  <div id="modal02" class="w3-modal w3-black" style="padding-top:0">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright" onclick="this.parentElement.style.display='none'">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <div id="screen_container1" >
-          <div style="white-space: pre; font: 14px monospace; line-height: 14px"></div>
-          <canvas style="display: none"></canvas>
-      </div>
-    </div>
-  </div>
+<!-- Hero -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <h1 class="text-5xl font-bold mb-4">Nesmy Point du Jour</h1>
+    <p class="text-xl text-gray-600 dark:text-gray-400 mb-8">Game Dev • Web Dev • OS Dev</p>
+    <!-- <a href="#projects" class="bg-green-500 text-black px-6 py-2 rounded hover:bg-green-600 transition">View My Work</a> -->
+  </section>
