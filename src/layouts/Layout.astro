@@ -6,7 +6,10 @@
   <title>Nesmy | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css">
   <script src="https://cdn.tailwindcss.com" is:inline></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" is:inline></script>
+  <script src="https://kit.fontawesome.com/764965a3fd.js" is::inline crossorigin="anonymous"></script>
   <script>
     if (localStorage.getItem("theme") === "light") {
       document.documentElement.classList.remove("dark");
@@ -18,7 +21,24 @@
     };
   </script>
   <script src="/js/myScript.js" is:inline></script>
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(#44444433 1px, transparent 1px);
+      background-size: 20px 20px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+   #modalDesc.markdown-body {
+      padding: 1rem;
+      background: transparent;
+    }
+  </style>
 </head>
 <body class="bg-white text-black dark:bg-gray-900 dark:text-white font-sans transition-colors duration-300">
+    <div class="absolute inset-0 bg-[radial-gradient(#44444433_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none z-0"></div>
     <slot/>
 </body>
