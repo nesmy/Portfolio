@@ -3,14 +3,16 @@ const GITHUB_USERNAME = "nesmy";
 
 function openModal(title, readme = "") {
       document.getElementById("modalTitle").textContent = title;
-      const baseUrl = `https://raw.githubusercontent.com/nesmy/${title}/main/`;
+      const baseUrl = `https://raw.githubusercontent.com/nesmy/${title}/main/README.md`;
       const rendered = marked.parse(readme || "No README available.");
+      const owner = "nesmy";
+      const repo = title;
+      const branch = "main";
       const withImgFix = rendered.replace(/<img src=\"(.*?)\"/g, (match, src) => {
         if (/^https?:\/\//.test(src)) return match;
-        return `<img src=\"${baseUrl}${src}\"`;
+        return `<img src=\"https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${src.replace(/^\.\/?/, '')}\"`;
       });
       document.getElementById("modalDesc").innerHTML = withImgFix;
-      document.getElementById("modalDesc").innerHTML = readme ? marked.parse(readme) : "<p>No README available.</p>";
       document.getElementById("projectModal").classList.remove("hidden");
     }
 function closeModal() {
