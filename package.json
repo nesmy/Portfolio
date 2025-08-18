@@ -8,9 +8,6 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "dependencies": {
-    "astro": "^5.11.1"
-  },
   "description": "",
   "main": "index.js",
   "repository": {
@@ -23,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/nesmy/Portfolio/issues"
   },
-  "homepage": "https://github.com/nesmy/Portfolio#readme"
+  "homepage": "https://github.com/nesmy/Portfolio#readme",
+  "devDependencies": {
+    "astro": "^5.13.2"
+  }
 }
